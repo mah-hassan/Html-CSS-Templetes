@@ -1,0 +1,102 @@
+section.landing {
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 12em;
+    top: 50px;
+}
+
+.landing .explore {
+    width: 55%;
+    background-color: var(--main-color);
+}
+
+.landing .explore .description h1 {
+    line-height: 1.2;
+    font-weight: 800;
+    margin: 0;
+}
+
+.landing .explore .description p {
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.landing .explore .features p {
+    position: relative;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.landing .explore .features p::before {
+    content: url(../Images/Checkmark.svg);
+    position: absolute;
+    left: -40px;
+}
+
+.landing .explore .partneres p {
+    font-weight: 600;
+}
+
+.landing .explore .partneres ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    width: fit-content;
+}
+
+.landing-image {
+    min-height: 300px;
+    max-height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width:1199px) {
+    .landing {
+        flex-direction: column;
+    }
+
+    .landing-image {
+        order: -1;
+        margin-top: 80px;
+        background-image: url(../Images/landing\ \(Tablet\ and\ Mobile\).jpg);
+    }
+
+    .landing .explore {
+        flex: 1;
+        width: 100%;
+    }
+
+    .logo {
+        top: 40px;
+        left: 25px;
+        transform: translateY(-50%);
+    }
+
+    .landing .explore .container {
+        padding: 20px;
+    }
+}
+
+@media (min-width:1200px) {
+    .landing-image {
+        width: 45%;
+        background-image: url(../Images/landing.jpg);
+    }
+
+    .landing .explore {
+        width: 55%;
+    }
+
+    .landing .explore .container {
+        width: 100%;
+        padding: 14em 12em;
+        height: 100%;
+    }
+}

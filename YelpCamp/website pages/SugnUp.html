@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800&family=Cairo&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/Normalize.css" />
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <!--master css file for this page  -->
+    <link rel="stylesheet" href="../CSS/user.css" />
+  </head>
+  <body>
+    <section class="acount-mang-page">
+      <section class="content">
+        <div class="container">
+          <header>
+            <div>
+              <a href="#"><img src="../Images/Logo.svg" alt="logo" /></a>
+            </div>
+            <div>
+              <label for="back">
+                <a href="../website pages/campgrounds.html" id="back"
+                  ><img src="../Images/BackArrow.svg" alt=""
+                /></a>
+              </label>
+              <a href="../website pages/campgrounds.html" id="back"
+                >Back to Campgrounds</a
+              >
+            </div>
+          </header>
+
+          <section class="acnt-mang">
+            <h1>Start exploring camps from all around the world.</h1>
+            <form action="" class="user">
+              <div class="feild">
+                <label for="user-name">Username</label>
+                <input
+                  type="text"
+                  name="UserName"
+                  id="user-name"
+                  placeholder="Type a Username"
+                />
+              </div>
+              <div class="feild">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  name="Password"
+                  id="password"
+                  placeholder="Create a Password"
+                  minlength="8"
+                />
+              </div>
+              <div class="sumit">
+                <input type="submit" value="Creat account" class="sw-bt" />
+                <ul>
+                  <li><p>Already a user</p></li>
+                  <li><a href="../website pages/SignIn.html">Sign Up</a></li>
+                </ul>
+              </div>
+            </form>
+          </section>
+        </div>
+      </section>
+
+      <section class="fead-back">
+        <q
+          >YelpCamp has honestely saved me hours of research, and the camps on
+          here are definitely well picked and added
+        </q>
+        <div class="user">
+          <img src="../Images/User Testimonial.svg" alt="user" />
+          <div class="caption">
+            <h4>May Andrews</h4>
+            <span>Professional Hiker</span>
+          </div>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>

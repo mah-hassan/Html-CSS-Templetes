@@ -1,0 +1,106 @@
+section.acount-mang-page {
+    display: flex;
+    height: 100vh;
+}
+
+section.acount-mang-page>.content .container {
+    display: flex;
+    flex-direction: column;
+}
+
+section.acount-mang-page>.content header div:last-of-type{
+    display: flex;
+}
+section.acount-mang-page>.content header div:last-of-type>label {
+    display: inline-block;
+    width: 20px;
+    align-self: center;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+
+
+section.acount-mang-page>.content .acnt-mang {
+    margin-top: 100px;
+}
+
+form.user>.feild {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+}
+
+form.user>.feild>input {
+    margin-top: 15px;
+    background-color: var(--main-color);
+    height: 40px;
+    padding: 10px 20px;
+}
+
+.sumit>input {
+    width: 100%;
+    line-height: 0;
+}
+
+.sumit>ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.sumit>ul a {
+    margin-left: 5px;
+    text-decoration: underline;
+}
+
+.fead-back {
+    background-color: var(--main-color);
+}
+
+.fead-back>q {
+    font-size: 18pt;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.fead-back>.user {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.fead-back>.user .caption {
+    margin-left: 10px;
+}
+
+.fead-back>.user .caption h4 {
+    margin: 0 0 5px;
+}
+
+@media (max-width:1200px) {
+    section.acount-mang-page {
+        flex-direction: column;
+    }
+
+    .fead-back {
+        background-color: var(--main-color);
+        padding: 5em 2em;
+    }
+}
+
+@media (min-width:1201px) {
+    section.acount-mang-page>.content {
+        width: 60%;
+    }
+
+    section.acount-mang-page>.content .container {
+        width: 90%;
+        padding: 0 8em;
+    }
+
+    .fead-back {
+        padding: 16em 8em;
+        width: 40%;
+    }
+}

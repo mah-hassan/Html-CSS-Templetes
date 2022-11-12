@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campgrounds</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800&family=Cairo&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/Normalize.css" />
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <!--master css file for this page  -->
+    <link rel="stylesheet" href="../CSS/ViewCamp.css" />
+  </head>
+  <body>
+    <section class="camp">
+      <div class="container">
+        <header>
+          <div class="logo">
+            <a href="#"><img src="../Images/Logo.svg" alt="logo" /></a>
+          </div>
+
+          <div>
+            <a href="../index.html" class="home">Home</a>
+            <div>
+              <input type="radio" name="act" id="Login" />
+              <label for="Login"><a href="SignIn.html">Login</a></label>
+              <input type="radio" name="act" id="Cr-Ac" checked />
+              <label for="Cr-Ac"><a href="SugnUp.html">Create Acount</a></label>
+            </div>
+          </div>
+
+          <div class="nav-ico">
+            <ul class="mobo-nav-men">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="SignIn.html">Login</a></li>
+              <li><a href="SugnUp.html">Create Acount</a></li>
+            </ul>
+            <img src="../Images/Hamburger Menu.svg" alt="menue" />
+          </div>
+        </header>
+        <section>
+          <div class="location">
+            <img src="../Images/Map.png" alt="location" />
+          </div>
+          <div class="review">
+            <div class="comment">
+              <h4>Adam Jons</h4>
+              <p>
+                honestly one of the best experiences ever , took us a while to
+                figour out haw to git there but it was ammazing!
+              </p>
+            </div>
+            <div class="comment">
+              <h4>Isaac Dylan</h4>
+              <p>
+                travilling changes you as a person , you gain more prespective
+                this is the perfict spot to do that.
+              </p>
+            </div>
+            <div class="comment">
+              <h4>Hudson Luca</h4>
+              <p>
+                definitely recommended going there , not to far and not alot of
+                people to rin the experiences.
+              </p>
+            </div>
+
+            <div>
+              <input type="radio" name="review" id="com" />
+              <label for="com">
+                <img src="../Images/chat.svg" alt="comment" />
+                <span>Leave Review</span>
+              </label>
+              <form action="">
+                <textarea
+                  name="comment"
+                  placeholder="leave you review her"
+                ></textarea>
+                <input type="submit" id="post" />
+                <label for="post"
+                  ><img src="../Images/post.svg" alt="post"
+                /></label>
+              </form>
+            </div>
+          </div>
+        </section>
+        <footer>
+          <a href="#"><img src="../Images/Logo.svg" alt="logo" /></a>
+        </footer>
+      </div>
+    </section>
+  </body>
+</html>
